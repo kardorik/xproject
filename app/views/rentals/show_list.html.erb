@@ -1,0 +1,9 @@
+<p>These listings are in the zipcode you searched</p>
+<% for rental in @rentals %>
+  <div>
+    <%= rental.street %>&nbsp;<%= rental.number %>
+    &nbsp;
+    <%= link_to "Show", :action => 'show_single', :id => rental.id %>
+
+  </div>
+<% end %>

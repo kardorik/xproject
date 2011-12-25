@@ -1,0 +1,112 @@
+body
+{
+    margin: 0px;
+    background-color: #B9DACA;
+    font: normal medium Georgia, "Times New Roman", Times, serif;
+    color: #336666;
+    text-align: left;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+}
+
+div.column
+{
+    /* border: 5px solid red; */
+}
+
+div.column_content
+{
+    width: 50%;
+    height: 100%;
+    color: #336666;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-left: 30px solid rgb(220, 237, 228);
+    border-right: 30px solid rgb(220, 237, 228);
+    padding-left: 30px;
+}
+
+table.stripe_set
+{
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+  border-collapse: collapse;
+}
+
+td.stripe_content
+{
+  width: 800px;
+  background-color:white;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+td.stripe_border
+{
+  width:20px;
+  background-color: rgb(220, 237, 228);
+}
+
+a {
+    border-bottom: 1px dotted #336666;
+    color: #874B46;
+    text-decoration: none;
+}
+
+a.nounderline {
+  border-bottom: none;
+}
+
+a:hover {
+    border-bottom-color: #FFFFFF;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid red; */
+}
+
+.sublogo {
+    margin-top: 0;
+    text-align: center;
+    color: #874B46;
+    font-size: 0.8em;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 60%;
+    border: 0px;
+    height: 1px;
+    background-color: #336666;
+    margin-top: 50px;
+}
+
+.footer {
+    text-align: center;
+    font-size: x-small;
+}
+
+#arrow {
+  padding: 0px 10px 0 10px;
+}
+
+#mutuals {
+  position: absolute;
+  margin-top: -170px;
+  margin-left: 40px;
+  z-index: 1;
+}
+

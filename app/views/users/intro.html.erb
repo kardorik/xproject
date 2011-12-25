@@ -1,0 +1,20 @@
+<h2 class="title">X</h2>
+<br/>
+<h2 class="title">Looking for an apartment? Find it here</h2>
+<div align=center><%= link_to image_tag('/images/find.png', :border => 0), :controller => 'rentals', :action => 'search_form' %></div>
+<h2 class="title">Post a review</h2>
+<ul>
+  <li><p><%= link_to 'Find', :controller => 'rentals', :action => 'search_form' %> an apartment you have visited</p></li>
+  <li><p>Post a review</p></li>
+  <li><p>Say what nobody tells you when you walk in</p></li>
+</ul>
+<h2 class="title">Looking for roommates? Login with Facebook!</h2>
+<%= link_to 'Why do we need your Facebook account?', :action => 'policy' %>
+<br/>
+<br/>
+<br/>
+<div align="center">
+  <a href="https://www.facebook.com/dialog/oauth?client_id=<%= $app_id %>&redirect_uri=<%= $app_url %>">
+    <img src="/images/imagesCAU88XRY.jpg" style="border:none;">
+  </a>
+</div>

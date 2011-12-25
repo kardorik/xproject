@@ -1,0 +1,9 @@
+<p>what's your X-ray view on this place?</p>
+<% form_for :review, :url => { :action => 'create'} do |f| %>
+
+    <%= f.text_area :content, { :rows => '2', :cols => '60' } %>
+
+    <p><%= submit_tag 'Save' %></p>
+
+<% end %>
+<%= link_to "Cancel", :controller => 'rentals', :action => 'show_single', :id => session[:rental_id] %>

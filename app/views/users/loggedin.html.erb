@@ -1,0 +1,25 @@
+<div id="content">
+  <div id="colOne">
+
+    <div class="post">
+      <div class="story">
+        <img src="<%= @current_user_info.picture %>">
+        <p>Hi, <%= @current_user_info.name %> you are logged in</p>
+        <% if not @active_friends.empty? %>
+          <p>Some of your friends are already using sittersplitter!</p> 
+          <table>
+            <% for active_friend in @active_friends %>
+              <tr>
+                <td><img src="<%= active_friend.picture %>"></td><td><%= active_friend.name %></td>
+              </tr>
+            <% end %>
+          </table>
+        <% end %>
+        <br/>
+      </div>
+    </div>
+
+    <div style="clear: both;">&nbsp;</div>
+
+  </div>
+</div>

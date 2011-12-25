@@ -1,0 +1,12 @@
+<p>Details for this listing</p>
+<div><%= @rental.street %>&nbsp;<%= @rental.number %></div>
+<br/>
+<%= link_to "Add Your Review", :controller => 'reviews', :action => 'new' %>
+<% if @rental.reviews.empty? %>
+  <p>No reviews for this rental. Be the first one to post a review!</p>
+<% else %>
+  <p>Reviews already posted:</p>
+  <% for review in @rental.reviews %>
+    <div><%= review.content %></div>
+  <% end %>
+<% end %>

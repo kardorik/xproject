@@ -1,0 +1,20 @@
+<p>add a new rental</p>
+
+<% form_for :rental, :url => { :action => 'create'} do |f| %>
+
+    <label>Street</label><br/>
+    <%= f.text_area :street, { :rows => '1', :cols => '60' } %><br/>
+    <label>Number:</label><br/>
+    <%= f.text_area :number, { :rows => '1', :cols => '5' } %><br/>
+    <label>Suite:</label><br/>
+    <%= f.text_area :unit, { :rows => '1', :cols => '5' } %><br/>
+    <label>City:</label><br/>
+    <%= f.text_area :city, { :rows => '1', :cols => '60' } %><br/>
+    <label>Zip Code:</label><br/>
+    <%= f.text_area :zipcode, { :rows => '1', :cols => '5' } %><br/>
+    <label>Country:</label><br/>
+    <%= f.text_area :country, { :rows => '1', :cols => '10' } %><br/>
+
+    <p><%= submit_tag 'Add Rental' %></p>
+
+<% end %>
